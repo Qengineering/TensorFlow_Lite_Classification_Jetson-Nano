@@ -29,7 +29,7 @@ To run the application, you have to:
 
 ------------
 
-## Running the app.
+## Installing the app.
 To extract and run the network in Code::Blocks <br/>
 $ mkdir *MyDir* <br/>
 $ cd *MyDir* <br/>
@@ -52,6 +52,10 @@ Now your *MyDir* folder may contain: mobilenet_v1_1.0_224_quant.tflite. <br/>
 Or: inception_v4_299_quant.tflite. Or both of course. <br/> <br/>
 Enter the .tflite file of your choice on line 54 in TensorFlow_Lite_Class.cpp <br/>
 The image to be tested is given a line 84, also in TensorFlow_Lite_Class.cpp <br/> <br/>
+
+------------
+
+## Running the app.
 Run TestTensorFlow_Lite.cpb with Code::Blocks.<br/>
 You may need to adapt the specified library locations in *TestTensorFlow_Lite.cpb* to match your directory structure.<br/><br/>
 With the `#define GPU_DELEGATE` uncommented, the TensorFlow Lite will deploy GPU delegates, if you have, of course, the appropriate libraries compiled by bazel. [Install GPU delegates](https://qengineering.eu/install-tensorflow-2-lite-on-jetson-nano.html)
